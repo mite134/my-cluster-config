@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-static-page
+  namespace: default
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+      <head><title>My Static Page</title></head>
+      <body>
+        <h1>Hello from Kubernetes + Nginx! 🎉</h1>
+        <p>Served by K3s on my own server!</p>
+      </body>
+    </html>
